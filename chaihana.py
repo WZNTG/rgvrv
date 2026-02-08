@@ -66,7 +66,7 @@ async def handle_text(msg: types.Message):
         
         # Тот самый формат ответа
         res_text = (
-            f"{user_full_name}, твоя преданность чайхане {word} на {abs(change)} очков.\n"
+            f"{user_full_name}, твоя преданность чайхане {word} на {abs(change)} очка.\n"
             f"Теперь она равна {new_score} очков.\n"
             f"Ты занимаешь {rank} место в топе\n"
             f"Следующая попытка завтра!"
@@ -116,4 +116,5 @@ async def main():
     await dp.start_polling(bot)
 
 if __name__ == "__main__":
+
     asyncio.run(main())
